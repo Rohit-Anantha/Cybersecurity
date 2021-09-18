@@ -16,7 +16,8 @@ r = requests.get('https://mastermind.praetorian.com/level/1/', headers=headers)
 r.json()
 data = (r.content)
 # > {'numGladiators': 4, 'numGuesses': 8, 'numRounds': 1, 'numWeapons': 6}
-
+# using the given number of weapons/gladiators you must assign each unique weapon to a gladiator
+# hehe idk if u can do this man this is like algo stuff and whatnot
 print(data['numGladiators'])
 
 r = requests.post('https://mastermind.praetorian.com/level/1/',
